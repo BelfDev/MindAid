@@ -20,4 +20,7 @@ class Activity: NSObject {
         var imageView = UIImageView (image:image)
         return imageView
     }
+    
+    //IAOIDSOADI foi?
 }
+
