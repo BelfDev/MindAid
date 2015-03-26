@@ -22,5 +22,6 @@ class Activity: NSObject {
     }
     
     //IAOIDSOADI foi?
+    //fala ai
 }
 
