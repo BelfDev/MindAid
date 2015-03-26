@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBE740D91AC44B4A0082822A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740D81AC44B4A0082822A /* AppDelegate.swift */; };
+		DBE740DB1AC44B4A0082822A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740DA1AC44B4A0082822A /* ViewController.swift */; };
+		DBE740DE1AC44B4A0082822A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE740DC1AC44B4A0082822A /* Main.storyboard */; };
+		DBE740E01AC44B4A0082822A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE740DF1AC44B4A0082822A /* Images.xcassets */; };
+		DBE740E31AC44B4A0082822A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE740E11AC44B4A0082822A /* LaunchScreen.xib */; };
+		DBE740EF1AC44B4A0082822A /* MindAidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740EE1AC44B4A0082822A /* MindAidTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBE740E91AC44B4A0082822A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBE740CB1AC44B4A0082822A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBE740D21AC44B4A0082822A;
+			remoteInfo = MindAid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBE740D31AC44B4A0082822A /* MindAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindAid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBE740D71AC44B4A0082822A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBE740D81AC44B4A0082822A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBE740DA1AC44B4A0082822A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBE740DD1AC44B4A0082822A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBE740DF1AC44B4A0082822A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DBE740E21AC44B4A0082822A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DBE740E81AC44B4A0082822A /* MindAidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindAidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBE740ED1AC44B4A0082822A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBE740EE1AC44B4A0082822A /* MindAidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindAidTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBE740D01AC44B4A0082822A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBE740E51AC44B4A0082822A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBE740CA1AC44B4A0082822A = {
+			isa = PBXGroup;
+			children = (
+				DBE740D51AC44B4A0082822A /* MindAid */,
+				DBE740EB1AC44B4A0082822A /* MindAidTests */,
+				DBE740D41AC44B4A0082822A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBE740D41AC44B4A0082822A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBE740D31AC44B4A0082822A /* MindAid.app */,
+				DBE740E81AC44B4A0082822A /* MindAidTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBE740D51AC44B4A0082822A /* MindAid */ = {
+			isa = PBXGroup;
+			children = (
+				DBE740D81AC44B4A0082822A /* AppDelegate.swift */,
+				DBE740DA1AC44B4A0082822A /* ViewController.swift */,
+				DBE740DC1AC44B4A0082822A /* Main.storyboard */,
+				DBE740DF1AC44B4A0082822A /* Images.xcassets */,
+				DBE740E11AC44B4A0082822A /* LaunchScreen.xib */,
+				DBE740D61AC44B4A0082822A /* Supporting Files */,
+			);
+			path = MindAid;
+			sourceTree = "<group>";
+		};
+		DBE740D61AC44B4A0082822A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBE740D71AC44B4A0082822A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBE740EB1AC44B4A0082822A /* MindAidTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBE740EE1AC44B4A0082822A /* MindAidTests.swift */,
+				DBE740EC1AC44B4A0082822A /* Supporting Files */,
+			);
+			path = MindAidTests;
+			sourceTree = "<group>";
+		};
+		DBE740EC1AC44B4A0082822A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBE740ED1AC44B4A0082822A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBE740D21AC44B4A0082822A /* MindAid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBE740F21AC44B4A0082822A /* Build configuration list for PBXNativeTarget "MindAid" */;
+			buildPhases = (
+				DBE740CF1AC44B4A0082822A /* Sources */,
+				DBE740D01AC44B4A0082822A /* Frameworks */,
+				DBE740D11AC44B4A0082822A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindAid;
+			productName = MindAid;
+			productReference = DBE740D31AC44B4A0082822A /* MindAid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBE740E71AC44B4A0082822A /* MindAidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBE740F51AC44B4A0082822A /* Build configuration list for PBXNativeTarget "MindAidTests" */;
+			buildPhases = (
+				DBE740E41AC44B4A0082822A /* Sources */,
+				DBE740E51AC44B4A0082822A /* Frameworks */,
+				DBE740E61AC44B4A0082822A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBE740EA1AC44B4A0082822A /* PBXTargetDependency */,
+			);
+			name = MindAidTests;
+			productName = MindAidTests;
+			productReference = DBE740E81AC44B4A0082822A /* MindAidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBE740CB1AC44B4A0082822A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Pedro Belfort";
+				TargetAttributes = {
+					DBE740D21AC44B4A0082822A = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					DBE740E71AC44B4A0082822A = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = DBE740D21AC44B4A0082822A;
+					};
+				};
+			};
+			buildConfigurationList = DBE740CE1AC44B4A0082822A /* Build configuration list for PBXProject "MindAid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBE740CA1AC44B4A0082822A;
+			productRefGroup = DBE740D41AC44B4A0082822A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBE740D21AC44B4A0082822A /* MindAid */,
+				DBE740E71AC44B4A0082822A /* MindAidTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBE740D11AC44B4A0082822A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE740DE1AC44B4A0082822A /* Main.storyboard in Resources */,
+				DBE740E31AC44B4A0082822A /* LaunchScreen.xib in Resources */,
+				DBE740E01AC44B4A0082822A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBE740E61AC44B4A0082822A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBE740CF1AC44B4A0082822A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE740DB1AC44B4A0082822A /* ViewController.swift in Sources */,
+				DBE740D91AC44B4A0082822A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBE740E41AC44B4A0082822A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE740EF1AC44B4A0082822A /* MindAidTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBE740EA1AC44B4A0082822A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBE740D21AC44B4A0082822A /* MindAid */;
+			targetProxy = DBE740E91AC44B4A0082822A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBE740DC1AC44B4A0082822A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBE740DD1AC44B4A0082822A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBE740E11AC44B4A0082822A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBE740E21AC44B4A0082822A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBE740F01AC44B4A0082822A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBE740F11AC44B4A0082822A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBE740F31AC44B4A0082822A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MindAid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DBE740F41AC44B4A0082822A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MindAid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DBE740F61AC44B4A0082822A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MindAidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindAid.app/MindAid";
+			};
+			name = Debug;
+		};
+		DBE740F71AC44B4A0082822A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MindAidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindAid.app/MindAid";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBE740CE1AC44B4A0082822A /* Build configuration list for PBXProject "MindAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBE740F01AC44B4A0082822A /* Debug */,
+				DBE740F11AC44B4A0082822A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBE740F21AC44B4A0082822A /* Build configuration list for PBXNativeTarget "MindAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBE740F31AC44B4A0082822A /* Debug */,
+				DBE740F41AC44B4A0082822A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DBE740F51AC44B4A0082822A /* Build configuration list for PBXNativeTarget "MindAidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBE740F61AC44B4A0082822A /* Debug */,
+				DBE740F71AC44B4A0082822A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBE740CB1AC44B4A0082822A /* Project object */;
+}
