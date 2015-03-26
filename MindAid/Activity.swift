@@ -24,5 +24,6 @@ class Activity: NSObject {
     //AGORA VAI ALT na DEV
     //Mudei pra ver se rola
     //Mudança 2
+    //Mudança 3]
 }
 
