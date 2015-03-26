@@ -20,5 +20,8 @@ class Activity: NSObject {
         var imageView = UIImageView (image:image)
         return imageView
     }
+    
+    //AGORA VAI ALT na DEV
+
 }
 
