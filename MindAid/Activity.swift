@@ -21,7 +21,5 @@ class Activity: NSObject {
         return imageView
     }
     
-    //IAOIDSOADI foi?
-    //fala ai
 }
 
