@@ -21,5 +21,6 @@ class Activity: NSObject {
         return imageView
     }
     //Alteração
+
 }
 
