@@ -13,6 +13,9 @@
 		DBE740E01AC44B4A0082822A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE740DF1AC44B4A0082822A /* Images.xcassets */; };
 		DBE740E31AC44B4A0082822A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE740E11AC44B4A0082822A /* LaunchScreen.xib */; };
 		DBE740EF1AC44B4A0082822A /* MindAidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740EE1AC44B4A0082822A /* MindAidTests.swift */; };
+		DBE740FC1AC4502E0082822A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740FB1AC4502E0082822A /* Activity.swift */; };
+		DBE740FE1AC454400082822A /* ActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740FD1AC454400082822A /* ActivityVC.swift */; };
+		DBE741001AC4546B0082822A /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740FF1AC4546B0082822A /* ImagePickerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		DBE740E81AC44B4A0082822A /* MindAidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindAidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE740ED1AC44B4A0082822A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBE740EE1AC44B4A0082822A /* MindAidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindAidTests.swift; sourceTree = "<group>"; };
+		DBE740FB1AC4502E0082822A /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		DBE740FD1AC454400082822A /* ActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityVC.swift; sourceTree = "<group>"; };
+		DBE740FF1AC4546B0082822A /* ImagePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +83,10 @@
 		DBE740D51AC44B4A0082822A /* MindAid */ = {
 			isa = PBXGroup;
 			children = (
+				DBE740F91AC44F600082822A /* Model */,
 				DBE740D81AC44B4A0082822A /* AppDelegate.swift */,
-				DBE740DA1AC44B4A0082822A /* ViewController.swift */,
-				DBE740DC1AC44B4A0082822A /* Main.storyboard */,
+				DBE740F81AC44F580082822A /* View */,
+				DBE740FA1AC44F680082822A /* Controller */,
 				DBE740DF1AC44B4A0082822A /* Images.xcassets */,
 				DBE740E11AC44B4A0082822A /* LaunchScreen.xib */,
 				DBE740D61AC44B4A0082822A /* Supporting Files */,
@@ -110,6 +117,32 @@
 				DBE740ED1AC44B4A0082822A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBE740F81AC44F580082822A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBE740DC1AC44B4A0082822A /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DBE740F91AC44F600082822A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBE740FB1AC4502E0082822A /* Activity.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DBE740FA1AC44F680082822A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBE740DA1AC44B4A0082822A /* ViewController.swift */,
+				DBE740FD1AC454400082822A /* ActivityVC.swift */,
+				DBE740FF1AC4546B0082822A /* ImagePickerVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE740FC1AC4502E0082822A /* Activity.swift in Sources */,
+				DBE741001AC4546B0082822A /* ImagePickerVC.swift in Sources */,
+				DBE740FE1AC454400082822A /* ActivityVC.swift in Sources */,
 				DBE740DB1AC44B4A0082822A /* ViewController.swift in Sources */,
 				DBE740D91AC44B4A0082822A /* AppDelegate.swift in Sources */,
 			);
@@ -341,6 +377,7 @@
 				INFOPLIST_FILE = MindAid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,6 +388,7 @@
 				INFOPLIST_FILE = MindAid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

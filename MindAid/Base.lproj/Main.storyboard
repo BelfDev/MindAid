@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yVP-pq-429">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MindAid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,89 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4d-jw-iFC">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Afternoon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZm-b2-Oky">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Morning">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKL-Ro-IPs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Night">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mKL-Ro-IPs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Is6-sb-JES"/>
+                            <constraint firstItem="H4d-jw-iFC" firstAttribute="leading" secondItem="NZm-b2-Oky" secondAttribute="leading" id="IvW-XI-cJJ"/>
+                            <constraint firstAttribute="bottom" secondItem="mKL-Ro-IPs" secondAttribute="bottom" constant="20" symbolic="YES" id="SE4-C0-iyE"/>
+                            <constraint firstItem="H4d-jw-iFC" firstAttribute="leading" secondItem="mKL-Ro-IPs" secondAttribute="leading" id="gjQ-Bh-FyQ"/>
+                            <constraint firstItem="NZm-b2-Oky" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="jSy-DU-a4q"/>
+                            <constraint firstItem="H4d-jw-iFC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uEW-FP-B9w"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="H4d-jw-iFC"/>
+                                <exclude reference="NZm-b2-Oky"/>
+                                <exclude reference="mKL-Ro-IPs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="IvW-XI-cJJ"/>
+                                <exclude reference="gjQ-Bh-FyQ"/>
+                                <exclude reference="uEW-FP-B9w"/>
+                                <exclude reference="jSy-DU-a4q"/>
+                                <exclude reference="Is6-sb-JES"/>
+                                <exclude reference="SE4-C0-iyE"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="H4d-jw-iFC"/>
+                                <include reference="NZm-b2-Oky"/>
+                                <include reference="mKL-Ro-IPs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="IvW-XI-cJJ"/>
+                                <include reference="gjQ-Bh-FyQ"/>
+                                <include reference="uEW-FP-B9w"/>
+                                <include reference="jSy-DU-a4q"/>
+                                <include reference="Is6-sb-JES"/>
+                                <include reference="SE4-C0-iyE"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="JEu-r4-TvK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1938" y="670"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LdK-wy-1pm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yVP-pq-429" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="59N-H3-UOC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xfn-aO-2cf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyo-iv-gmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216.5" y="670"/>
         </scene>
     </scenes>
 </document>
