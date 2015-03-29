@@ -8,17 +8,56 @@
 
 import UIKit
 
-class ActivityVC: UIViewController {
+let textCellIdentifier = "titleInputCell"
 
+class ActivityVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
+
+    //Declarations
+    var currentActivity = Activity()
+    @IBOutlet weak var firstTableView: UITableView!
+    
+    //Setting up ActivityViewController
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstTableView.delegate = self
+        firstTableView.dataSource = self
+    
 
-        // Do any additional setup after loading the view.
+        //Abaixo segue o resgistro que utlizaremos para celulas custom
+        /*self.firstTableView.registerClass(UITableViewCell.self, forHeaderFooterViewReuseIdentifier: textCellIdentifier)
+        self.firstTableView.dataSource = self*/
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //Setting up firstTableView
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        
+        var cell = self.firstTableView.dequeueReusableCellWithIdentifier(textCellIdentifier) as TitleTableViewCell
+    
+        cell.configure(text: "", placeholder: "Title")
+        currentActivity.title = cell.textField.text
+        println(currentActivity.title)
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
     }
     
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB99A9091AC73D5E006E2824 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99A9081AC73D5E006E2824 /* TitleTableViewCell.swift */; };
 		DBE740D91AC44B4A0082822A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740D81AC44B4A0082822A /* AppDelegate.swift */; };
 		DBE740DB1AC44B4A0082822A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740DA1AC44B4A0082822A /* ViewController.swift */; };
 		DBE740DE1AC44B4A0082822A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE740DC1AC44B4A0082822A /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB99A9081AC73D5E006E2824 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		DBE740D31AC44B4A0082822A /* MindAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindAid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE740D71AC44B4A0082822A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBE740D81AC44B4A0082822A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,8 +85,8 @@
 		DBE740D51AC44B4A0082822A /* MindAid */ = {
 			isa = PBXGroup;
 			children = (
-				DBE740F91AC44F600082822A /* Model */,
 				DBE740D81AC44B4A0082822A /* AppDelegate.swift */,
+				DBE740F91AC44F600082822A /* Model */,
 				DBE740F81AC44F580082822A /* View */,
 				DBE740FA1AC44F680082822A /* Controller */,
 				DBE740DF1AC44B4A0082822A /* Images.xcassets */,
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				DBE740FB1AC4502E0082822A /* Activity.swift */,
+				DB99A9081AC73D5E006E2824 /* TitleTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				DBE741001AC4546B0082822A /* ImagePickerVC.swift in Sources */,
 				DBE740FE1AC454400082822A /* ActivityVC.swift in Sources */,
 				DBE740DB1AC44B4A0082822A /* ViewController.swift in Sources */,
+				DB99A9091AC73D5E006E2824 /* TitleTableViewCell.swift in Sources */,
 				DBE740D91AC44B4A0082822A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +449,7 @@
 				DBE740F41AC44B4A0082822A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBE740F51AC44B4A0082822A /* Build configuration list for PBXNativeTarget "MindAidTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +458,7 @@
 				DBE740F71AC44B4A0082822A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
