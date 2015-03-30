@@ -9,11 +9,12 @@
 import UIKit
 
 let textCellIdentifier = "titleInputCell"
-
-class ActivityVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
+// Belfort
+class ActivityVC: UIViewController,UITableViewDataSource,UITableViewDelegate, UITextFieldDelegate {
 
     //Declarations
-    var currentActivity = Activity()
+    //var currentActivity = Activity()
+    
     @IBOutlet weak var firstTableView: UITableView!
     
     //Setting up ActivityViewController
@@ -21,8 +22,7 @@ class ActivityVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         super.viewDidLoad()
         firstTableView.delegate = self
         firstTableView.dataSource = self
-    
-
+        
         //Abaixo segue o resgistro que utlizaremos para celulas custom
         /*self.firstTableView.registerClass(UITableViewCell.self, forHeaderFooterViewReuseIdentifier: textCellIdentifier)
         self.firstTableView.dataSource = self*/
@@ -43,23 +43,38 @@ class ActivityVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         
         return 1
     }
+    @IBAction func done(sender: AnyObject) {
+       //TODO
+        var newActivity = Activity(title: "XPTO", imageName: "xpto.png")
+        
+        newActivity.description = "LA LA LA"
+        
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         
         var cell = self.firstTableView.dequeueReusableCellWithIdentifier(textCellIdentifier) as TitleTableViewCell
-    
+        
+        cell.textField.delegate = self
         cell.configure(text: "", placeholder: "Title")
-        currentActivity.title = cell.textField.text
-        println(currentActivity.title)
+        //currentActivity.title = cell.textField.text
+        //println(currentActivity.title)
         
         return cell
     }
+    
+    
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
     }
     
+    //Make the keyboard disappear when press return
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
     /*
     // MARK: - Navigation

@@ -211,7 +211,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Activity" id="jw2-gk-eTD">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Nr6-C0-JtD"/>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Vnm-Ur-hjM"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Vnm-Ur-hjM">
+                            <connections>
+                                <action selector="done:" destination="LWb-zb-TNC" id="gOF-sK-CvB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="firstTableView" destination="SmM-vz-pfa" id="ZvO-2O-ql9"/>

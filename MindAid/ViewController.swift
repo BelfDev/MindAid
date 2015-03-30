@@ -7,14 +7,33 @@
 //
 
 import UIKit
-
+// Gabriel
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var allDateTime = DAO.getAllDateTime()
+        for (var i = 0 ; i < allDateTime!.count ; i++)
+        {
+            if (allDateTime![i].name == "Morning")
+            {
+                Data.sharedInstance.morningTime = allDateTime![i]
+            }
+            else if (allDateTime![i].name == "Afternoon")
+            {
+                Data.sharedInstance.afternoonTime = allDateTime![i]
+            }
+            else
+            {
+                Data.sharedInstance.nightTime = allDateTime![i]
+            }
+        }
+        
     }
     
+    
+    //
     
     // chega dessa merda
 

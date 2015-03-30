@@ -8,10 +8,17 @@
 
 import UIKit
 
-class Activity: NSObject {
+class Activity{
     
-    var title:String = String()
-    var imageString:String = String()
+    var title:String!
+    var imageName:String!
+    var description:String?
+    
+    init(title:String, imageName:String){
+        self.title = title
+        self.imageName = imageName
+    }
+    
     
     //Methods
     
