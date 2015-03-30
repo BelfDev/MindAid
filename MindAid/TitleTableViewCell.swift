@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TitleTableViewCell: UITableViewCell, UITextFieldDelegate {
+class TitleTableViewCell: UITableViewCell {
     
     //Declaration
     @IBOutlet weak var textField: UITextField!
@@ -18,7 +18,6 @@ class TitleTableViewCell: UITableViewCell, UITextFieldDelegate {
         super.awakeFromNib()
         // Initialization code
         
-        textField.delegate = self
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -35,11 +34,6 @@ class TitleTableViewCell: UITableViewCell, UITextFieldDelegate {
         
         textField.accessibilityValue = text
         textField.accessibilityLabel = placeholder
-    }
-    
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        return true
     }
 
 

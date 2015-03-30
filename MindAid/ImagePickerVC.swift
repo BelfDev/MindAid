@@ -9,7 +9,7 @@
 import UIKit
 
 let reuseIdentifier = "Cell"
-
+// Maria
 class ImagePickerVC: UICollectionViewController {
 
     override func viewDidLoad() {
