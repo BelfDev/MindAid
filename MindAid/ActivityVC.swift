@@ -8,24 +8,25 @@
 
 import UIKit
 
-let textCellIdentifier = "titleInputCell"
 // Belfort
-class ActivityVC: UIViewController,UITableViewDataSource,UITableViewDelegate, UITextFieldDelegate {
+
+class ActivityVC: UIViewController, UITextFieldDelegate, ImagePickerVCDelegate {
 
     //Declarations
-    //var currentActivity = Activity()
     
-    @IBOutlet weak var firstTableView: UITableView!
+    @IBOutlet weak var imageIcon: UIButton!
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    
+    var chosenImage:String?
+    var dayTime:String!
     
     //Setting up ActivityViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstTableView.delegate = self
-        firstTableView.dataSource = self
         
-        //Abaixo segue o resgistro que utlizaremos para celulas custom
-        /*self.firstTableView.registerClass(UITableViewCell.self, forHeaderFooterViewReuseIdentifier: textCellIdentifier)
-        self.firstTableView.dataSource = self*/
+        titleTextField.delegate = self
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,57 +34,75 @@ class ActivityVC: UIViewController,UITableViewDataSource,UITableViewDelegate, UI
         // Dispose of any resources that can be recreated.
     }
     
-    //Setting up firstTableView
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        
-        return 1
-    }
-    @IBAction func done(sender: AnyObject) {
-       //TODO
-        var newActivity = Activity(title: "XPTO", imageName: "xpto.png")
-        
-        newActivity.description = "LA LA LA"
-        
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        
-        var cell = self.firstTableView.dequeueReusableCellWithIdentifier(textCellIdentifier) as TitleTableViewCell
-        
-        cell.textField.delegate = self
-        cell.configure(text: "", placeholder: "Title")
-        //currentActivity.title = cell.textField.text
-        //println(currentActivity.title)
-        
-        return cell
-    }
-    
-    
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
-    }
     
     //Make the keyboard disappear when press return
     func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        
         textField.resignFirstResponder()
         return true
+        
     }
 
-    /*
+    //Done button
+    @IBAction func done(sender: AnyObject) {
+        
+        if (titleTextField.text != "" && chosenImage != nil){
+            
+            var newActivity = Activity(title: titleTextField.text, imageName: chosenImage!)
+            
+            if descriptionTextField.text != ""
+            {
+                newActivity.description = descriptionTextField.text
+            }
+            
+            println(newActivity.title)
+            println(newActivity.imageName)
+            println(newActivity.description)
+            println(dayTime)
+            
+            DAO.saveActivity(newActivity,dayTime: dayTime)
+            
+            navigationController?.popToRootViewControllerAnimated(true)
+            
+        }
+        else{
+            
+            let alertController = UIAlertController(title: "UH-OH", message:
+                "Don`t forget to choose title and image", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    
+    @IBAction func cancel(sender: AnyObject) {
+        
+        navigationController?.popToRootViewControllerAnimated(true)
+        
+    }
+    
+    func didPickImage(controller: ImagePickerVC, imageName: String) {
+        
+        //Setting up button Image
+        
+        chosenImage = imageName
+        let buttonImage = UIImage (named: chosenImage!)
+        
+        imageIcon.setImage(buttonImage, forState: .Normal)
+        controller.navigationController?.popViewControllerAnimated(true)
+        
+    }
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "pickImageButton"{
+            let vc = segue.destinationViewController as ImagePickerVC
+            vc.delegate = self
+            
+        }
     }
-    */
 
 }

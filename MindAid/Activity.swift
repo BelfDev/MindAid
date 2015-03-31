@@ -12,7 +12,7 @@ class Activity{
     
     var title:String!
     var imageName:String!
-    var description:String?
+    var description:String!
     
     init(title:String, imageName:String){
         self.title = title
