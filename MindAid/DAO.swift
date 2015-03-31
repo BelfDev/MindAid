@@ -10,7 +10,7 @@ import Foundation
 // Tatiana
 class DAO{
     
-    class func saveActivity(activity:Activity)->Bool{
+    class func saveActivity(activity:Activity,dayTime:String!)->Bool{
         return false
     }
     

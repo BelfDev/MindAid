@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol ImagePickerVCDelegate{
+    func didPickImage(controller:ImagePickerVC, imageName:String)
+}
+
 let reuseIdentifier = "Cell"
 // Maria
 class ImagePickerVC: UICollectionViewController {
+    
+    var delegate:ImagePickerVCDelegate? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +65,16 @@ class ImagePickerVC: UICollectionViewController {
     
         return cell
     }
+    
+    @IBAction func save(sender: UIBarButtonItem) {
+        
+        if (delegate != nil) {
+            delegate!.didPickImage(self, imageName: "testeImagem")
+        }
+        
+    }
+  
+    
 
     // MARK: UICollectionViewDelegate
 
