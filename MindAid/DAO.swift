@@ -30,12 +30,27 @@ class DAO{
         var morningActivity = Activity(title: "Medicine", imageName: "medicine.png")
         morning.activities?.append(morningActivity)
         
+        morningActivity = Activity(title: "Medicine", imageName: "medicine.png")
+        morning.activities?.append(morningActivity)
+        
+//        morningActivity = Activity(title: "Medicine", imageName: "medicine.png")
+//        morning.activities?.append(morningActivity)
+//        
+//        morningActivity = Activity(title: "Medicine", imageName: "medicine.png")
+//        morning.activities?.append(morningActivity)
+        
+        
+        
         var afternoon = DateTime(name: "Afternoon")
         var afternoonActivity = Activity(title: "Study", imageName: "study.png")
+        afternoon.activities?.append(afternoonActivity)
+        afternoonActivity = Activity(title: "Study", imageName: "study.png")
         afternoon.activities?.append(afternoonActivity)
         
         var night = DateTime(name: "Night")
         var nightActivity = Activity(title: "Soccer", imageName: "soccer.png")
+        night.activities?.append(nightActivity)
+        nightActivity = Activity(title: "Soccer", imageName: "soccer.png")
         night.activities?.append(nightActivity)
         
         var timeArray = [morning,afternoon,night]

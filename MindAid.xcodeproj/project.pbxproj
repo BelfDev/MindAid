@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0E519B1ACAE7A2002C941F /* CollectionOfActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0E519A1ACAE7A2002C941F /* CollectionOfActivity.swift */; };
 		DB99A9091AC73D5E006E2824 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99A9081AC73D5E006E2824 /* TitleTableViewCell.swift */; };
 		DBE6405B1AC98B8E00359F5B /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6405A1AC98B8E00359F5B /* DAO.swift */; };
 		DBE6405D1AC98E5B00359F5B /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6405C1AC98E5B00359F5B /* DateTime.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB0E519A1ACAE7A2002C941F /* CollectionOfActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionOfActivity.swift; sourceTree = "<group>"; };
 		DB99A9081AC73D5E006E2824 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		DBE6405A1AC98B8E00359F5B /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		DBE6405C1AC98E5B00359F5B /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				DB99A9081AC73D5E006E2824 /* TitleTableViewCell.swift */,
 				DBE740DC1AC44B4A0082822A /* Main.storyboard */,
+				DB0E519A1ACAE7A2002C941F /* CollectionOfActivity.swift */,
 				DBE740E11AC44B4A0082822A /* LaunchScreen.xib */,
 			);
 			name = View;
@@ -139,8 +142,8 @@
 		DBE740F91AC44F600082822A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DBE740FB1AC4502E0082822A /* Activity.swift */,
 				DBE6405A1AC98B8E00359F5B /* DAO.swift */,
+				DBE740FB1AC4502E0082822A /* Activity.swift */,
 				DBE6405C1AC98E5B00359F5B /* DateTime.swift */,
 				DBE6405E1AC990EB00359F5B /* Data.swift */,
 			);
@@ -262,6 +265,7 @@
 				DBE741001AC4546B0082822A /* ImagePickerVC.swift in Sources */,
 				DBE740FE1AC454400082822A /* ActivityVC.swift in Sources */,
 				DBE740DB1AC44B4A0082822A /* ViewController.swift in Sources */,
+				DB0E519B1ACAE7A2002C941F /* CollectionOfActivity.swift in Sources */,
 				DB99A9091AC73D5E006E2824 /* TitleTableViewCell.swift in Sources */,
 				DBE6405D1AC98E5B00359F5B /* DateTime.swift in Sources */,
 				DBE6405F1AC990EB00359F5B /* Data.swift in Sources */,
