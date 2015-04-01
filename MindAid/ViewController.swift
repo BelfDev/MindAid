@@ -16,7 +16,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib. 
         var allDateTime = DAO.getAllDateTime()
         for (var i = 0 ; i < allDateTime!.count ; i++)
         {
