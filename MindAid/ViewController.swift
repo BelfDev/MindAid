@@ -16,11 +16,11 @@ class ViewController: UIViewController {
         var allDateTime = DAO.getAllDateTime()
         for (var i = 0 ; i < allDateTime!.count ; i++)
         {
-            if (allDateTime![i].name == "Morning")
+            if (allDateTime![i].name == "morning")
             {
                 Data.sharedInstance.morningTime = allDateTime![i]
             }
-            else if (allDateTime![i].name == "Afternoon")
+            else if (allDateTime![i].name == "afternoon")
             {
                 Data.sharedInstance.afternoonTime = allDateTime![i]
             }
