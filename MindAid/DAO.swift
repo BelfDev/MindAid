@@ -145,7 +145,8 @@ class DAO{
         var keys = contents.allKeys
         
         if keys.count == 0 {
-            
+
+//           **** ESSA É A PARTE NOVA QUE DEVERIA ESTAR APARECENDO!!!!!! *****
             println("DAO -> getAllDateTime -> fim (não tinha nada para ler)")
             return [morning,afternoon,night]
         }
