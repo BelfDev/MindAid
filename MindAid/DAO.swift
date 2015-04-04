@@ -27,6 +27,8 @@ class DAO{
         var activityNum:String
         var activityInfo:NSMutableDictionary
         
+        activityInfo = ["Title": activity.title, "ImageName": activity.imageName, "Description": activity.description]
+        
         if dayTime.hasPrefix("morning") {
             activityNum = "morning\(data.count)"
         }
@@ -37,10 +39,7 @@ class DAO{
             activityNum = "night\(data.count)"
         }
         
-        activityInfo = ["Title": activity.title, "ImageName": activity.imageName, "Description": activity.description]
-        
         data.setObject(activityInfo, forKey: activityNum)
-        
         data.writeToFile(path, atomically: true)
         
         println(path)
@@ -51,11 +50,81 @@ class DAO{
         return false // *** EM QUAL CASO RETORNARIA FALSE, E EM QUAL RETORNARIA TRUE? ***
     }
     
-    class func updateActivity(activity:Activity)->Bool{
-        return false
+    class func updateActivity(oldActivity:Activity, newActivity:Activity)->Bool{
+        
+        println("DAO -> updateActivity -> inicio")
+        
+        var pathAux = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        var path: NSString = pathAux.stringByAppendingPathComponent("ActivityList.plist")
+        var data: NSMutableDictionary! = NSMutableDictionary(contentsOfFile: path)
+
+        var keys = data.allKeys
+        var activityInfo: NSMutableDictionary!
+        
+        for(var i = 0; i < keys.count; i++) {
+            var key = keys[i] as String
+
+            activityInfo = data.valueForKey(key) as NSMutableDictionary
+            var title = activityInfo.valueForKey("Title") as String
+            var imageName = activityInfo.valueForKey("ImageName") as String
+            var description = activityInfo.valueForKey("Description") as String
+            
+            if(title == oldActivity.title && imageName == oldActivity.imageName && description == oldActivity.description) {
+                
+                activityInfo = ["Title": newActivity.title, "ImageName": newActivity.imageName, "Description": newActivity.description]
+                data.setObject(activityInfo, forKey: key)
+                data.writeToFile(path, atomically: true)
+                
+                println(path)
+                println(data)
+                
+                println("DAO -> updateActivity -> fim (achou)")
+                return true
+            }
+            
+        }
+        
+        
+        println(path)
+        println(data)
+        println("DAO -> updateActivity -> fim (nao achou)")
+        return false //Couldn't find the activity
     }
     
-    class func deleteActivity(activity:Activity)->Bool{
+    class func deleteActivity(activity:Activity)->Bool {
+        
+        println("DAO -> deleteActivity -> inicio")
+        
+        var pathAux = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        var path: NSString = pathAux.stringByAppendingPathComponent("ActivityList.plist")
+        var data: NSMutableDictionary! = NSMutableDictionary(contentsOfFile: path)
+        
+        var keys = data.allKeys
+        var activityInfo: NSMutableDictionary!
+        
+        for(var i = 0; i < keys.count; i++) {
+            var key = keys[i] as String
+            
+            activityInfo = data.valueForKey(key) as NSMutableDictionary
+            var title = activityInfo.valueForKey("Title") as String
+            var imageName = activityInfo.valueForKey("ImageName") as String
+            var description = activityInfo.valueForKey("Description") as String
+            
+            if(title == activity.title && imageName == activity.imageName && description == activity.description) {
+                
+                data.removeObjectForKey(key)
+                data.writeToFile(path, atomically: true)
+                
+                println(path)
+                println(data)
+                println("DAO -> deleteActivity -> fim (achou)")
+                return true
+            }
+        }
+        
+        println(path)
+        println(data)
+        println("DAO -> deleteActivity -> fim (nao achou)")
         return false
     }
     
@@ -115,11 +184,8 @@ class DAO{
         var timeArray = [morning,afternoon,night]
         
         println(path)
-        println(morning.activities)
-        println(morning.activities?.count)
         println(morning.activities?[0].title)
-        println(timeArray)
-        
+
         println("DAO -> getAllDateTime -> fim")
         
         return timeArray
