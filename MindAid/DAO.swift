@@ -144,8 +144,14 @@ class DAO{
         let contents:NSDictionary! = NSDictionary(contentsOfFile: path)
         var keys = contents.allKeys
         
+        if keys.count == 0 {
+            
+            println("DAO -> getAllDateTime -> fim (não tinha nada para ler)")
+            return [morning,afternoon,night]
+        }
+        
         for(var i = 0; i < keys.count; i++) {
-            var key:String
+            var key:String!
             key = keys[i] as String
             
             activityInfo = contents.valueForKey(key)
