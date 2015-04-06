@@ -30,12 +30,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         var allDateTime = DAO.getAllDateTime()
         for (var i = 0 ; i < allDateTime!.count ; i++)
         {
-            if (allDateTime![i].name == "Morning")
+            if (allDateTime![i].name == "morning")
             {
                 Data.sharedInstance.morningTime = allDateTime![i]
                 
             }
-            else if (allDateTime![i].name == "Afternoon")
+            else if (allDateTime![i].name == "afternoon")
             {
                 Data.sharedInstance.afternoonTime = allDateTime![i]
             }
@@ -48,6 +48,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
     }
     
+<<<<<<< HEAD
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int
     {
         return 3;
@@ -291,11 +292,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     //        //sender.delete(UICollectionViewUpdateItem)
     //    }
     
+=======
+
+>>>>>>> master
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+<<<<<<< HEAD
     
     //codigo para atualizar a collection quando for para a tela do pedro
     //    override func viewWillAppear
@@ -316,5 +321,32 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     
+=======
+    //No prepareForSegue você vai ter que distinguir cada situação para posicionar a tarefa criada na região "certa". Para a tela de consulta, vou precisar que você me passe os dados de referência da atividade selecionada para então carregar as infomrações no ActivitiVC
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "morningSegue"
+        {
+            let vc = segue.destinationViewController as ActivityVC
+            vc.dayTime = "morning"
+            
+        }
+        else if segue.identifier == "afternoonSegue"
+        {
+            let vc = segue.destinationViewController as ActivityVC
+            vc.dayTime = "afternoon"
+        }
+        else
+        {
+            let vc = segue.destinationViewController as ActivityVC
+            vc.dayTime = "night"
+            
+        }
+        
+    }
+
+
+>>>>>>> master
 }
 
