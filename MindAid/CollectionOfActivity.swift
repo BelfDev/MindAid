@@ -16,4 +16,6 @@ class CollectionOfActivity: UICollectionViewCell {
     @IBOutlet weak var labelCell: UILabel!
     
     
+    
+    
 }

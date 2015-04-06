@@ -27,30 +27,64 @@ class DAO{
         
         //Fake data for testing
         var morning = DateTime(name: "Morning")
-        var morningActivity = Activity(title: "Medicine", imageName: "medicine.png")
+        var morningActivity = Activity(title: "MedTeste", imageName: "btMed_20x20.png")
         morning.activities?.append(morningActivity)
         
-        morningActivity = Activity(title: "Medicine", imageName: "medicine.png")
+        morningActivity = Activity(title: "Soccerr", imageName: "btMed_20x20.png")
         morning.activities?.append(morningActivity)
         
-//        morningActivity = Activity(title: "Medicine", imageName: "medicine.png")
-//        morning.activities?.append(morningActivity)
-//        
-//        morningActivity = Activity(title: "Medicine", imageName: "medicine.png")
-//        morning.activities?.append(morningActivity)
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
+//
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
         
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
         
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
+        
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
+        
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
+        
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
+        
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
+        
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
+        
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
+        
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
+        
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
+        
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
+        
+        morningActivity = Activity(title: "Medicine", imageName: "btMed_20x20.png")
+        morning.activities?.append(morningActivity)
         
         var afternoon = DateTime(name: "Afternoon")
-        var afternoonActivity = Activity(title: "Study", imageName: "study.png")
+        var afternoonActivity = Activity(title: "Study", imageName: "btBook_20.png")
         afternoon.activities?.append(afternoonActivity)
-        afternoonActivity = Activity(title: "Study", imageName: "study.png")
+        afternoonActivity = Activity(title: "Study", imageName: "btBook_20.png")
         afternoon.activities?.append(afternoonActivity)
         
         var night = DateTime(name: "Night")
-        var nightActivity = Activity(title: "Soccer", imageName: "soccer.png")
+        var nightActivity = Activity(title: "Teste", imageName: "medicine.png")
         night.activities?.append(nightActivity)
-        nightActivity = Activity(title: "Soccer", imageName: "soccer.png")
+        nightActivity = Activity(title: "Teste22", imageName: "soccer.png")
         night.activities?.append(nightActivity)
         
         var timeArray = [morning,afternoon,night]

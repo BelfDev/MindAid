@@ -20,8 +20,8 @@ class ActivityVC: UIViewController,UITableViewDataSource,UITableViewDelegate, UI
     //Setting up ActivityViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstTableView.delegate = self
-        firstTableView.dataSource = self
+        //firstTableView.delegate = self
+        //firstTableView.dataSource = self
         
         //Abaixo segue o resgistro que utlizaremos para celulas custom
         /*self.firstTableView.registerClass(UITableViewCell.self, forHeaderFooterViewReuseIdentifier: textCellIdentifier)
@@ -76,6 +76,10 @@ class ActivityVC: UIViewController,UITableViewDataSource,UITableViewDelegate, UI
         return true
     }
 
+    func getPosition(secaoNum:Int, posItem:Int){
+        println(" secao:\(secaoNum) pos do Item: \(posItem)")
+    }
+    
     /*
     // MARK: - Navigation
 
