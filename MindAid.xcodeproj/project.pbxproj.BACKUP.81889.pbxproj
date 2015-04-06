@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		DB0E519B1ACAE7A2002C941F /* CollectionOfActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0E519A1ACAE7A2002C941F /* CollectionOfActivity.swift */; };
 		DB1F55AB1AD03E4D00A6C482 /* btBook_40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1F55A91AD03E4D00A6C482 /* btBook_40x40.png */; };
 		DB1F55AC1AD03E4D00A6C482 /* btMedicine40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1F55AA1AD03E4D00A6C482 /* btMedicine40x40.png */; };
 		DB1F55AF1AD0400B00A6C482 /* btBook_20.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1F55AD1AD0400B00A6C482 /* btBook_20.png */; };
 		DB1F55B01AD0400B00A6C482 /* btMed_20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1F55AE1AD0400B00A6C482 /* btMed_20x20.png */; };
 		DB99A9091AC73D5E006E2824 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99A9081AC73D5E006E2824 /* TitleTableViewCell.swift */; };
+=======
 		16F190AD1ACDB712004EE14C /* ActivityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16F190AC1ACDB712004EE14C /* ActivityList.plist */; };
+>>>>>>> master
 		DBE6405B1AC98B8E00359F5B /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6405A1AC98B8E00359F5B /* DAO.swift */; };
 		DBE6405D1AC98E5B00359F5B /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6405C1AC98E5B00359F5B /* DateTime.swift */; };
 		DBE6405F1AC990EB00359F5B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6405E1AC990EB00359F5B /* Data.swift */; };
 		DBE740D91AC44B4A0082822A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740D81AC44B4A0082822A /* AppDelegate.swift */; };
 		DBE740DB1AC44B4A0082822A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740DA1AC44B4A0082822A /* ViewController.swift */; };
 		DBE740DE1AC44B4A0082822A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE740DC1AC44B4A0082822A /* Main.storyboard */; };
-		DBE740E01AC44B4A0082822A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE740DF1AC44B4A0082822A /* Images.xcassets */; };
 		DBE740E31AC44B4A0082822A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE740E11AC44B4A0082822A /* LaunchScreen.xib */; };
 		DBE740EF1AC44B4A0082822A /* MindAidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740EE1AC44B4A0082822A /* MindAidTests.swift */; };
 		DBE740FC1AC4502E0082822A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE740FB1AC4502E0082822A /* Activity.swift */; };
@@ -39,13 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		DB0E519A1ACAE7A2002C941F /* CollectionOfActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionOfActivity.swift; sourceTree = "<group>"; };
 		DB1F55A91AD03E4D00A6C482 /* btBook_40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btBook_40x40.png; sourceTree = "<group>"; };
 		DB1F55AA1AD03E4D00A6C482 /* btMedicine40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btMedicine40x40.png; sourceTree = "<group>"; };
 		DB1F55AD1AD0400B00A6C482 /* btBook_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btBook_20.png; sourceTree = "<group>"; };
 		DB1F55AE1AD0400B00A6C482 /* btMed_20x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btMed_20x20.png; sourceTree = "<group>"; };
 		DB99A9081AC73D5E006E2824 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+=======
 		16F190AC1ACDB712004EE14C /* ActivityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ActivityList.plist; path = ../ActivityList.plist; sourceTree = "<group>"; };
+>>>>>>> master
 		DBE6405A1AC98B8E00359F5B /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		DBE6405C1AC98E5B00359F5B /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		DBE6405E1AC990EB00359F5B /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -54,7 +59,6 @@
 		DBE740D81AC44B4A0082822A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBE740DA1AC44B4A0082822A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBE740DD1AC44B4A0082822A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DBE740DF1AC44B4A0082822A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DBE740E21AC44B4A0082822A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DBE740E81AC44B4A0082822A /* MindAidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindAidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE740ED1AC44B4A0082822A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,7 +115,6 @@
 				DBE740F91AC44F600082822A /* Model */,
 				DBE740F81AC44F580082822A /* View */,
 				DBE740FA1AC44F680082822A /* Controller */,
-				DBE740DF1AC44B4A0082822A /* Images.xcassets */,
 				DBE740D61AC44B4A0082822A /* Supporting Files */,
 			);
 			path = MindAid;
@@ -156,8 +159,8 @@
 		DBE740F91AC44F600082822A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DBE740FB1AC4502E0082822A /* Activity.swift */,
 				DBE6405A1AC98B8E00359F5B /* DAO.swift */,
+				DBE740FB1AC4502E0082822A /* Activity.swift */,
 				DBE6405C1AC98E5B00359F5B /* DateTime.swift */,
 				DBE6405E1AC990EB00359F5B /* Data.swift */,
 			);
@@ -256,12 +259,14 @@
 			files = (
 				DB1F55AF1AD0400B00A6C482 /* btBook_20.png in Resources */,
 				DBE740DE1AC44B4A0082822A /* Main.storyboard in Resources */,
+<<<<<<< HEAD
 				DB1F55AB1AD03E4D00A6C482 /* btBook_40x40.png in Resources */,
 				DB1F55B01AD0400B00A6C482 /* btMed_20x20.png in Resources */,
 				DB1F55AC1AD03E4D00A6C482 /* btMedicine40x40.png in Resources */,
+=======
 				16F190AD1ACDB712004EE14C /* ActivityList.plist in Resources */,
+>>>>>>> master
 				DBE740E31AC44B4A0082822A /* LaunchScreen.xib in Resources */,
-				DBE740E01AC44B4A0082822A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +289,11 @@
 				DBE741001AC4546B0082822A /* ImagePickerVC.swift in Sources */,
 				DBE740FE1AC454400082822A /* ActivityVC.swift in Sources */,
 				DBE740DB1AC44B4A0082822A /* ViewController.swift in Sources */,
+<<<<<<< HEAD
 				DB0E519B1ACAE7A2002C941F /* CollectionOfActivity.swift in Sources */,
 				DB99A9091AC73D5E006E2824 /* TitleTableViewCell.swift in Sources */,
+=======
+>>>>>>> master
 				DBE6405D1AC98E5B00359F5B /* DateTime.swift in Sources */,
 				DBE6405F1AC990EB00359F5B /* Data.swift in Sources */,
 				DBE740D91AC44B4A0082822A /* AppDelegate.swift in Sources */,

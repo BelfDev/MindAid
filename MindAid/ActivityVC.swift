@@ -24,6 +24,9 @@ class ActivityVC: UIViewController, UITextFieldDelegate, ImagePickerVCDelegate {
     //Setting up ActivityViewController
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        //firstTableView.delegate = self
+        //firstTableView.dataSource = self
         
         titleTextField.delegate = self
     
@@ -94,6 +97,20 @@ class ActivityVC: UIViewController, UITextFieldDelegate, ImagePickerVCDelegate {
         
     }
     
+<<<<<<< HEAD
+    //Make the keyboard disappear when press return
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+
+    func getPosition(secaoNum:Int, posItem:Int){
+        println(" secao:\(secaoNum) pos do Item: \(posItem)")
+    }
+    
+    /*
+=======
+>>>>>>> master
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

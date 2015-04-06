@@ -27,6 +27,8 @@ class Activity{
         var imageView = UIImageView (image:image)
         return imageView
     }
+    
+    
 }
 
 
